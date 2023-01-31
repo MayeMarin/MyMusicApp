@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/albumFragment"
+    android:title="@string/home"
+    android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/playlistFragment"
+        android:title="@string/playlist"
+        android:icon="@drawable/ic_audio"/>
+
+    <item
+        android:id="@+id/libraryFragment"
+        android:title="@string/library"
+        android:icon="@drawable/library_music"/>
+
+</menu>

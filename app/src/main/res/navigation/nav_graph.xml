@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/albumFragment">
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="com.example.myapp.iu.AlbumsFragment"
+        android:label="fragment_albums"
+        tools:layout="@layout/fragment_albums" >
+        <action
+            android:id="@+id/action_albumFragment_to_listSongsFragment"
+            app:destination="@id/listSongsFragment" />
+        <action
+            android:id="@+id/action_albumFragment_to_artistFragment"
+            app:destination="@id/artistFragment" />
+        <action
+            android:id="@+id/action_albumFragment_to_playerActivity"
+            app:destination="@id/playerActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.myapp.iu.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/listSongsFragment"
+        android:name="com.example.myapp.iu.ListSongsFragment"
+        android:label="fragment_list_songs"
+        tools:layout="@layout/fragment_list_songs" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_listSongsFragment_to_playerActivity"
+            app:destination="@id/playerActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistFragment"
+        android:name="com.example.myapp.iu.ArtistFragment"
+        android:label="fragment_artist"
+        tools:layout="@layout/fragment_artist" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.myapp.iu.PlaylistFragment"
+        android:label="fragment_playlist"
+        tools:layout="@layout/fragment_playlist" >
+        <action
+            android:id="@+id/action_playlistFragment_to_playerActivity"
+            app:destination="@id/playerActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/playerActivity"
+        android:name="com.example.myapp.PlayerActivity"
+        android:label="activity_player"
+        tools:layout="@layout/activity_player" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument android:name="images" />
+        <argument
+            android:name="previewUrl"
+            app:argType="string" />
+    </activity>
+</navigation>

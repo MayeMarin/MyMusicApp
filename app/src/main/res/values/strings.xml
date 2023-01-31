@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="musica">Musica</string>
+    <string name="biblioteca">Biblioteca</string>
+    <string name="buscar">Buscar</string>
+    <string name="inicio">Inicio</string>
+    <string name="sour">Sour</string>
+    <string name="olivia_rodrigo">Olivia Rodrigo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="albums">Albums</string>
+    <string name="songs">Songs</string>
+    <string name="library">Library</string>
+    <string name="home">Home</string>
+    <string name="image">https://i.scdn.co/image/ab6761610000e5eb2dc40ac263ef07c16a95af4e</string>
+    <string name="playlist">PlayList</string>
+    <string name="album">Albums</string>
+    <string name="albumes">Albums</string>
+    <string name="playlists">PlayList</string>
+    <string name="artist">Artist</string>
+    <string name="artists">Artist</string>
+    <string name="Pop" />
+    <string name="title_activity_view_player">ViewPlayer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title">Title</string>
+    <string name="title_music">Title Music</string>
+    <string name="title_song">Title Song</string>
+    <string name="song_mp3">https://p.scdn.co/mp3-preview/904176ea758e40523f23d0542cfe66423c7caad4?cid=e2338301798f4979bf0695225c0c5030</string>
+
+</resources>

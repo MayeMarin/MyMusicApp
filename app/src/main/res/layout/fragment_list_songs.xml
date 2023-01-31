@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".iu.ListSongsFragment">
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageAlbum_PlaySongs"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/PlaySongs_nameAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textColor="#5ccb5f"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            tools:text="Global Warming" />
+
+        <TextView
+            android:id="@+id/PlaySongs_nameArtist"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Pitbull" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/albumType"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            tools:text="Album"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_baseline_play_circle_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listSongs"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:text="Brutal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
